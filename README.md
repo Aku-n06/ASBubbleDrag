@@ -19,10 +19,12 @@ Bubble drag control integrate in storyboard :
 - ti implement ASBubbleMenu, first create a UIView and add it to your UIViewController in storyboard; then set the class as ASBubbleDrag :
     ![alt tag](https://github.com/scamps88/ASBubbleDrag/blob/master/README/image9.png)
 - then attach it to an iboutlet
+
     ```swift
     @IBOutlet var bubbleDragView : ASBubbleDrag!
     ```
 - and populate it with an array of UIImage
+
     ```swift
     self.bubbleDragView.populate(icons)
     ```
