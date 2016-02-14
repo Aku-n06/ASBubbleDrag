@@ -10,6 +10,7 @@ Bubble drag control integrate in storyboard :
 
 - Just copy the ASBubbleDrag folder to your project
 - Or, if you are using CocoaPod, add the followind line to yur Podfile (adding the use_frameworks! flag at the end)
+
     pod 'ASBubbleDrag', :git => 'https://github.com/scamps88/ASBubbleDrag.git'
 
     use_frameworks!
