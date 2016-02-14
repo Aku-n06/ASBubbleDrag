@@ -1,38 +1,37 @@
-# ASBubbleMenu
+# ASBubbleDrag
 
-Simple bubble menu animated :
+Bubble drag control integrate in storyboard :
 
 
-![alt tag](https://github.com/scamps88/ASBubbleMenu/blob/master/README/animated.gif)
+![alt tag](https://github.com/scamps88/ASBubbleDrag/blob/master/README/animated.gif)
 
 
 ### installation :
 
-- Just copy the ASMenuBubble folder to your project
-
-### implementation :
-
+- Just copy the ASBubbleDrag folder to your project
 - Or, if you are using CocoaPod, add the followind line to yur Podfile (adding the use_frameworks! flag at the end)
-    pod 'ASBubbleMenu', :git => 'https://github.com/scamps88/ASBubbleMenu.git'
+    pod 'ASBubbleDrag', :git => 'https://github.com/scamps88/ASBubbleDrag.git'
 
     use_frameworks!
 
-- ti implement ASBubbleMenu just give him an array of UIimages and it will show them :
-    ```swift
-    var bubbleMenu : ASMenuBubble!
+### implementation :
 
-    bubbleMenu = ASMenuBubble(frame: CGRectZero)
-    bubbleMenu.showWithIcons(icons)
+- ti implement ASBubbleMenu, first create a UIView and add it to your UIViewController in storyboard; then set the class as ASBubbleDrag :
+    ![alt tag](https://github.com/scamps88/ASBubbleDrag/blob/master/README/image9.png)
+- then attach it to an iboutlet
+    ```swift
+    @IBOutlet var bubbleDragView : ASBubbleDrag!
+    ```
+- and populate it with an array of UIImage
+    ```swift
+    self.bubbleDragView.populate(icons)
     ```
 
-- the ASMenuBubbleDelegate protocol will return the index selected :
+- the ASBubbleDragDelegate protocol will return the index selected :
     ```swift
-func ASMenuBubbleSelectedMenuItemAtIndex(index: NSInteger) {
-}
-    ```
+    self.bubbleDragView.delegate = self
 
-- to close the menu just call this method :
-    ```swift
-    bubbleMenu.closeAnimated()
+    func ASBubbleDragSelectedMenuItemAtIndex(index: NSInteger) {
+    }
     ```
 
