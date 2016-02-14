@@ -16,7 +16,7 @@ Bubble drag control integrate in storyboard :
 
 ### implementation :
 
-- ti implement ASBubbleMenu, first create a UIView and add it to your UIViewController in storyboard; then set the class as ASBubbleDrag :
+- to implement ASBubbleMenu, first create a UIView and add it to your UIViewController in storyboard; then set the class as ASBubbleDrag :
     ![alt tag](https://github.com/scamps88/ASBubbleDrag/blob/master/README/image9.png)
 - then attach it to an iboutlet
 
