@@ -31,7 +31,7 @@ class BubbleDragView: UIView, UICollectionViewDataSource {
         self.collectionView.dataSource = self
         
         //add gesture recognizers
-        let dragGesture = UIPanGestureRecognizer(target: self, action: "handleDrag:")
+        let dragGesture = UIPanGestureRecognizer(target: self, action: #selector(BubbleDragView.handleDrag(_:)))
         dragGesture.maximumNumberOfTouches = 1
         self.addGestureRecognizer(dragGesture)
         
