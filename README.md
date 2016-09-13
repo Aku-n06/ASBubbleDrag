@@ -6,16 +6,27 @@ Bubble drag control integrate in storyboard :
 ![alt tag](https://github.com/scamps88/ASBubbleDrag/blob/master/README/animated.gif)
 
 
-### installation :
+## Installation
 
-- Just copy the ASBubbleDrag folder to your project
+#### CocoaPods
+You can use [CocoaPods](http://cocoapods.org/) to install `ASBubbleDrag` by adding it to your `Podfile`:
 
-- Or, if you are using CocoaPod, add the followind line to your Podfile (adding the use_frameworks! flag at the end) :
-    
-    ```swift
+```ruby
+platform :ios, '8.0'
+use_frameworks!
     pod 'ASBubbleDrag', :git => 'https://github.com/scamps88/ASBubbleDrag.git'
-    use_frameworks!
-    ```
+```
+
+To get the full benefits import `ASBubbleDrag` wherever you import UIKit
+
+``` swift
+import UIKit
+import ASBubbleDrag
+```
+
+#### Manually
+1. Download and drop ```/ASBubbleDrag```folder in your project.  
+2. Congratulations!  
 
 ### implementation :
 
